@@ -93,9 +93,13 @@ main {
     .izquierda {
         /* border: var(--paraBordes); */
         height: 200px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
     }
     .izquierda h1 {
         font-size: 350%;
+        padding: 20px 0;
     }
     .flecha {
         display: none;
@@ -103,6 +107,12 @@ main {
     .imagenPerfil {
         margin-left: 0px;
         margin-top: 0px;
+    }
+    .boton1 {
+        margin-left: -15%;
+    }
+    .boton2 {
+        margin-left: -15%;
     }
 }
 .izquierda {
@@ -215,7 +225,7 @@ h1 {
 }
 .presentacion h2 {
     /*border: 1px solid black;*/
-    margin-left: 16.5%;
+    margin-left: 13%;
     margin-top: 5%;
     font-size: 200%;
     width: 725px;
@@ -226,13 +236,13 @@ h1 {
 }
 .presentacion p {
     /* border: 1px solid black;  */
-    margin-left: 16.5%;
+    margin-left: 13%;
     margin-top: 1%;
     font-size: 150%;
     width: 725px;
     height: 200px;
 }
-.experiencia {
+.experiencia1 {
     /* border: 1px solid black; */
     margin-left: 10%;
     margin-top: 2.7%;
@@ -251,7 +261,7 @@ h1 {
     transform: scale 1.2;
 }
 }
-.experiencia h1 {
+.experiencia1 h1 {
 display: flex;
 /*border: 1px solid black;*/
 border-radius: 100px;
@@ -271,7 +281,7 @@ animation-duration: 6s;
 animation-iteration-count: 2;
 }
 
-.experiencia h4 {
+.experiencia1 h4 {
 margin-top: 20px;
 text-align: center;
 font-size: 150%;
@@ -311,15 +321,18 @@ font-size: 150%;
         height: 200px;
         text-align: center;
     }
+    .experiencia1 {
+        margin-left: 0%;
+    }
 }
 .tabladatos {
     margin-top: -130px;
     font-family: Solway, cursive;
-    margin-left: 9%;
+    margin-left: 7%;
     width: 1200px;
     height: 80px;
     /* margin-bottom: 30px; */
-    border: var(--paraBordes);
+    /* border: var(--paraBordes); */
 }
 .partesuperiortabla {
     color: grey;
@@ -489,7 +502,7 @@ font-size: 150%;
     font-size: 150%;
     padding-top: 30px;
 }
-@media(max-width: 1100px) {
+@media(max-width: 1160px) {
     .padre {
         display: flex;
         flex-direction: column;
@@ -502,4 +515,126 @@ font-size: 150%;
         align-items: center;
         background-color: var(--colorParaFondo);
     }
+}/*aca empieza cuarta seccion resumen de cv*/
+.cuarta {
+    margin: 46px auto;
+    width: 100%;
+    height: 700px;
+    padding-top: 80px;
+    
 }
+.cuarta p {
+    margin: 0 auto;
+    background-color: var(--colorElegido);
+    width: 80px;
+    height: 23px;
+    font-size: 110%;
+}
+.cuarta h2 {
+    font-size: 200%;
+    margin: 20px auto;
+    text-align: center;
+    
+}
+@media(max-width:1160px) {
+    .cuarta {
+        margin-top: 1060px;
+    }     
+}
+@media(max-width:1160px) {
+    .resumen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .experiencia {
+        padding-top: 30px;
+        padding-right:4% ;
+    }
+}
+.resumen {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    text-align: left;
+}
+.resumen h2 {
+    font-size: 150%;
+    text-align: left;
+}
+.subtitulo {
+    padding-left: 6%;
+}
+.miEducación h5 {
+    text-align: left;
+    color: gray;
+    font-size: 120%;
+}
+.miExperiencia h5 {
+    text-align: left;
+    color: gray;
+    font-size: 120%;
+}
+.miEducación h3 {
+    padding-bottom: 10px;
+    font-size: 120%;
+}
+.miExperiencia h3 {
+    padding-bottom: 10px;
+    font-size: 120%;
+}
+.educacion {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 700px;
+    text-align: left;
+    margin-left: 5%;
+}
+.miEducación {
+    text-align: left; 
+    border: 0;
+    border-left: 5px solid var(--colorElegido);
+    margin-left: 6%;
+    padding-left: 3%;
+}
+.experiencia {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 700px;    
+    margin-top: -2px;
+    margin-left: 13%;
+}
+.miExperiencia {
+    text-align: left; 
+    border: 0;
+    border-left: 5px solid var(--colorElegido);
+    margin-left: 6%;
+    padding-left: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*aca empieza quinta seccion con mis habilidades*/
