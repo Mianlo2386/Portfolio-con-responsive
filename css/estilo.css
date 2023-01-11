@@ -699,7 +699,7 @@ font-size: 150%;
 }
 .botonCV {
     color: var(--colorElegido);
-    border: 1px solid black;
+    border: 2px solid black;
     font-size: 100%;
     width: 180px;
     height: 50px;
@@ -712,15 +712,15 @@ font-size: 150%;
   }
   .botonCV:hover {
     cursor: pointer;
-    background-color: var(--colorParaFondo);
+    background-color: black;
   }
   .botonCV a {
     text-decoration: none;
-    color: var(--colorElegido);
+    color: black;
     
   }
   .botonCV a:hover {
-    color: black;
+    color: white;
     text-decoration-line: underline;
   }
   @media(max-width: 1170px) {
@@ -743,7 +743,7 @@ font-size: 150%;
     }
   }
   
-  /*aca empieza sexta seccion sobre proyectos*/
+  /*aca empieza sexta seccion sobre porfolio*/
 
 
 
@@ -754,3 +754,159 @@ font-size: 150%;
     padding-top: 70px;
     margin-top: 50px;
   }
+  .sexta h2 strong {
+    margin-left: 380px;
+    /*border: 1px solid black;*/
+    font-size: 120%;
+  }
+  @media(max-width:1200px) {
+    .sexta h2 strong {
+        margin-left: 300px;  
+    }
+  }
+  
+  @media(max-width:1024px) {
+    .sexta h2 strong {
+        margin-left: 230px;  
+    }
+    
+  @media(max-width:966px) {
+    .sexta h2 strong {
+        margin-left: 200px;  
+    }
+  }
+  @media(max-width:850px) {
+    .sexta h2 strong {
+        margin-left: 150px;  
+    }
+  }
+  }
+  .sexta p {                    
+    margin: 50px 46.5%;
+    width: 80px;
+    height: 23px;
+    background-color: var(--colorElegido);
+    font-size: 115%;
+  }
+  .navbar2  {
+    
+    width: 580px;
+    height: 35px;
+    padding: 40 px auto;
+    justify-content: space-around;
+    font-size: 110%;
+    margin: 30px auto;
+    text-align: center;
+    word-spacing: 20px;
+  }
+  .navbar2 a {
+    text-decoration: none;
+    color: gray;
+  }
+
+
+.contenedor-imagenes{
+    display: flex;
+    width: 86%;
+    height: 100%;
+    margin-left: 7%;
+    margin-top: 2%;
+    justify-content: space-between;
+}
+@media(max-width:1024px) {
+    .contenedor-imagenes {
+        margin-left: 0%;
+        margin-top: 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+.contenedor-img {
+    position: relative; 
+    width: 32%;
+}
+@media(max-width:1024px) {
+    .contenedor-img {
+        margin: 20px 0;
+        width: 85%;
+    }   
+}
+
+.imagen-fondo {
+    display: block;
+    width: 100%;
+}
+.contenedor-texto {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%; 
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(0,0,0,.5);
+}
+.contenedor-texto i {
+    color: white;
+    font-size: 250%;
+    position: absolute;
+    top: 20%;
+    right: 45%;
+}
+@media(max-width:1024px){
+    .contenedor-texto i {
+        right: 48%;
+    }
+}
+.contenedor-texto h3 {
+    color: white;
+    font-size: 150%;
+    position: absolute;
+    top: 55%;
+    right: 35%;  
+}
+@media(max-width:1024px){
+    .contenedor-texto h2 {
+        right: 0%;
+        left: 21%;
+        font-size: 300%;
+    }
+}
+
+@media(max-width:1024px){
+    .contenedor-texto h3 {
+        right: 0%;
+        left: 36%;
+        font-size: 300%;
+    }
+}
+.icono {
+    font-size: 150%;
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 100px; 
+
+}
+.texto {
+    font-size: 150%;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 12%;
+}
+.categoria {
+  font-size: 80%;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 10%;  
+}
+.contenedor-img:hover .contenedor-texto {
+    opacity: 1;
+}
