@@ -89,6 +89,7 @@ main {
         /* border: var(--paraBordes); */
         width: 450px;
         height: 450px;
+        margin-left: -100px;
     }
     .izquierda {
         /* border: var(--paraBordes); */
@@ -97,9 +98,16 @@ main {
         display: flex;
         flex-direction: column;
     }
+    .izquierda h2 {
+        margin-left: -100px;
+    }
     .izquierda h1 {
         font-size: 350%;
         padding: 20px 0;
+        margin-left: -70px;
+    }
+    .izquierda h3 {
+        margin-left: -70px;
     }
     .flecha {
         display: none;
@@ -149,6 +157,7 @@ h1 {
     border-radius: 5px;
 }
 .boton1:hover {
+    background-color: var(--colorParaFondo);
     color: var(--colorElegido);
 }
 .boton2 {
@@ -311,13 +320,12 @@ font-size: 150%;
         width: 100%;
         height: 100px;
         text-align: center;
-        
         margin-left: 0%;
-        /* border: var(--paraBordes); */
+        /* border: var(--paraBordes);  */
     }
     .presentacion  p{
-        margin-left: 0%;
-        width: 100%;
+        margin-left: 5%;
+        width: 90%;
         height: 200px;
         text-align: center;
     }
@@ -356,7 +364,7 @@ font-size: 150%;
     height: 100px;
     display: flex;
     justify-content: space-around;
-    
+    margin-left: 10%;
     display: none; 
 }
 .tabladedatos2 h4 {
@@ -748,11 +756,12 @@ font-size: 150%;
 
 
  .sexta {
-    background-color: var(--colorParaFondo);
+    background-color: var(--colorElegido);
     width: 100%;
-    height: 1400px;
+    height: 1430px;
     padding-top: 70px;
     margin-top: 50px;
+
   }
   .sexta h2 strong {
     margin-left: 380px;
@@ -766,21 +775,26 @@ font-size: 150%;
   }
   
   @media(max-width:1024px) {
+    .sexta {
+        height:8350px ;
+        /* margin-bottom: 150px; */
+    }
     .sexta h2 strong {
         margin-left: 230px;  
     }
-    
-  @media(max-width:966px) {
-    .sexta h2 strong {
-        margin-left: 200px;  
+  }
+  @media(max-width:980px) {
+    .sexta {
+        height:8000px ;
+        margin-bottom: 0px;   
     }
-  }
-  @media(max-width:850px) {
-    .sexta h2 strong {
-        margin-left: 150px;  
+}
+    @media(max-width:880px) {
+      .sexta {
+          height:7300px ;
+      }
     }
-  }
-  }
+  
   .sexta p {                    
     margin: 50px 46.5%;
     width: 80px;
@@ -910,3 +924,62 @@ font-size: 150%;
 .contenedor-img:hover .contenedor-texto {
     opacity: 1;
 }
+.septima {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 427px;
+    background-image: url(manos_sobre_teclado.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+  }
+  @nedia(max-width:1024px) {
+    .septima {
+        padding-top: 200px;
+    }
+} 
+
+/* @nedia(max-width:1000px) {
+    .septima {
+        margin-top: -100px;
+    }
+}  */
+  
+  .septima h1 {
+    margin: 0 auto;
+    width: 50%;
+    /* padding-left: 15%; */
+    padding-top: 75px;
+    padding-bottom: 75px;
+    color: white;
+    font-size: 250%;
+    
+  }
+  .septima button {
+    /* margin-left: 550px; */
+    background-color: var(--colorElegido);
+    width: 15%;
+    height: 80px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: var(--paraBordes);
+  }
+  .septima button:hover {
+    background-color: green;
+  }
+  .septima a {
+    padding-top: 50px;
+    text-decoration: none;
+    color: black;
+    font-size: 150%;
+}
+
+
+
+
+
+
