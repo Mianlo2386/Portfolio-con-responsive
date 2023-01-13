@@ -72,7 +72,7 @@ main {
     /* border: 1px solid red; */
     /* background-color: blue; */
     width: 100%;
-    height: 700px;
+    height: 615px;
     display: flex;
     background-color: var(--colorElegido);
 }
@@ -148,7 +148,7 @@ main {
 
 @media(max-width:576px) {
     .izquierda h2 {
-        border: var(--paraBordes);
+        /* border: var(--paraBordes); */
       font-size: 80%;  
       text-align: center;
       width: 100%;
@@ -159,9 +159,62 @@ main {
       /* border: var(--paraBordes);  */ 
     }
     .boton1 {
-        margin-right: -10px;  
+        margin-left: -45px;  
+    } 
+}
+
+@media(max-width:412px) {
+    .primera {
+        width: 100%;
+        height: 700px;
+    }
+    .derecha {
+        width: 100%;
+        height: 100%;
+        border: var(--paraBordes);
+    } 
+    .imagenPerfil {
+        margin-top: 0px;
+        width: 100px;
+        height:100px;
+    }
+    .izquierda h2 {
+      border: var(--paraBordes);
+      font-size: 0%;  
+      text-align: center;
+      width: 300px;
+      height: 100px;
+    }
+    .izquierda h1 {
+        font-size: 270%;
+        padding-top: 20px;
+        margin-right: 120px;
+        text-align:center;
+        width: 400px;
+        height: 100%;
+      /* border: var(--paraBordes);  */
+    }
+    .izquierda h3 {
+        /* border: var(--paraBordes); */
+    }
+    /* .botones {
+        display: flex;
+        justify-content: space-around;
+        border: var(--paraBordes);
+        width: 100%;
+        height: 100%;
+    } */
+    .boton1 { 
+        position: relative;
+        right: 70px;    
+    } 
+    .boton2 {
+       position: relative;
+       left: 90px;
+       bottom: 20px;
     }
 }
+
 .izquierda {
     width: 50%;
     height: 360px;
@@ -174,7 +227,7 @@ main {
 } 
 .izquierda h2 {
     margin-top: 100px;
-    font-size: 250%;
+    font-size: 200%;
 } 
 h1 {
     width: 650px;
@@ -184,7 +237,12 @@ h1 {
 .izquierda h3 {
     padding: 20px 0;
     margin-bottom: 30px;
-}
+}/* 
+.botones {
+    border: var(--paraBordes);
+    width: 50%;
+    background-color: blueviolet;
+} */
 .boton1 {
     border: var(--paraBordes); 
     text-decoration: none;
@@ -292,7 +350,7 @@ h1 {
 }
 .experiencia1 {
     /* border: 1px solid black; */
-    margin-left: 10%;
+    margin-left: 15%;
     margin-top: 2.7%;
     margin-right: 0%;
     width: 400px;
