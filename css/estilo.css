@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 :root {
     --colorOriginal: rgb(245,223,78);
@@ -71,7 +72,7 @@ main {
     /* border: 1px solid red; */
     /* background-color: blue; */
     width: 100%;
-    height: 100%;
+    height: 700px;
     display: flex;
     background-color: var(--colorElegido);
 }
@@ -81,22 +82,28 @@ main {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
+        height: 850px;
         /* border: var(--paraBordes); */
     }
     .derecha {
         display: flex;
         justify-content: center;
         /* border: var(--paraBordes); */
-        width: 450px;
-        height: 450px;
-        margin-left: -100px;
+        width: 550px;
+        height: 600px;
+        margin-right: 100px;
+        padding-top: 100px;
+        
+        /* margin-left: -100px; */
+        
+        
     }
     .izquierda {
         /* border: var(--paraBordes); */
-        height: 200px;
-        margin-left: 0px;
+        margin-bottom: 50px;
         display: flex;
         flex-direction: column;
+        width: 600px;
     }
     .izquierda h2 {
         margin-left: -100px;
@@ -107,7 +114,8 @@ main {
         margin-left: -70px;
     }
     .izquierda h3 {
-        margin-left: -70px;
+        margin-right: 100px;
+        margin-bottom: 0px;
     }
     .flecha {
         display: none;
@@ -117,10 +125,41 @@ main {
         margin-top: 0px;
     }
     .boton1 {
-        margin-left: -15%;
+        
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 20px;
     }
     .boton2 {
-        margin-left: -15%;
+        margin-right: 75px;
+        /* border: var(--paraBordes); */
+    }
+}
+@media(max-width:768px) {
+    .izquierda h3 {
+    width: 600px;
+    text-align: center;
+      /* border: var(--paraBordes);  */ 
+    }
+    .boton1 {
+        margin-right: -10px;  
+    }
+}
+
+@media(max-width:576px) {
+    .izquierda h2 {
+        border: var(--paraBordes);
+      font-size: 80%;  
+      text-align: center;
+      width: 100%;
+    }
+    .izquierda h1 {
+        font-size: 300%;
+        margin-left: 20px;
+      /* border: var(--paraBordes);  */ 
+    }
+    .boton1 {
+        margin-right: -10px;  
     }
 }
 .izquierda {
@@ -192,7 +231,7 @@ h1 {
 }
 /*aca empieza segunda seccion con presentación*/
 .segunda {
-    /* border: var(--paraBordes); */
+    border: var(--paraBordes);
     padding-top: 10px;
     width: 100%;
     height: 750px;
@@ -756,45 +795,18 @@ font-size: 150%;
 
 
  .sexta {
-    background-color: var(--colorElegido);
+    background-color: var(--colorParaFondo);
     width: 100%;
-    height: 1430px;
+    height: 100%;
     padding-top: 70px;
     margin-top: 50px;
-
+    padding-bottom: 3%;
   }
   .sexta h2 strong {
     margin-left: 380px;
     /*border: 1px solid black;*/
     font-size: 120%;
   }
-  @media(max-width:1200px) {
-    .sexta h2 strong {
-        margin-left: 300px;  
-    }
-  }
-  
-  @media(max-width:1024px) {
-    .sexta {
-        height:8350px ;
-        /* margin-bottom: 150px; */
-    }
-    .sexta h2 strong {
-        margin-left: 230px;  
-    }
-  }
-  @media(max-width:980px) {
-    .sexta {
-        height:8000px ;
-        margin-bottom: 0px;   
-    }
-}
-    @media(max-width:880px) {
-      .sexta {
-          height:7300px ;
-      }
-    }
-  
   .sexta p {                    
     margin: 50px 46.5%;
     width: 80px;
@@ -819,34 +831,18 @@ font-size: 150%;
   }
 
 
-.contenedor-imagenes{
+  .contenedor-imagenes{
     display: flex;
     width: 86%;
     height: 100%;
     margin-left: 7%;
     margin-top: 2%;
     justify-content: space-between;
-}
-@media(max-width:1024px) {
-    .contenedor-imagenes {
-        margin-left: 0%;
-        margin-top: 3%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
+    /* border: var(--paraBordes); */
 }
 .contenedor-img {
-    position: relative; 
+    position: relative;
     width: 32%;
-}
-@media(max-width:1024px) {
-    .contenedor-img {
-        margin: 20px 0;
-        width: 85%;
-    }   
 }
 
 .imagen-fondo {
@@ -872,10 +868,8 @@ font-size: 150%;
     top: 20%;
     right: 45%;
 }
-@media(max-width:1024px){
-    .contenedor-texto i {
-        right: 48%;
-    }
+.contenedor-texto h2 {
+    left: 15%;
 }
 .contenedor-texto h3 {
     color: white;
@@ -884,46 +878,92 @@ font-size: 150%;
     top: 55%;
     right: 35%;  
 }
-@media(max-width:1024px){
-    .contenedor-texto h2 {
-        right: 0%;
-        left: 21%;
-        font-size: 300%;
-    }
-}
-
-@media(max-width:1024px){
-    .contenedor-texto h3 {
-        right: 0%;
-        left: 36%;
-        font-size: 300%;
-    }
-}
-.icono {
-    font-size: 150%;
-    color: white;
-    position: absolute;
-    top: 10%;
-    left: 100px; 
-
-}
 .texto {
     font-size: 150%;
     color: white;
     position: absolute;
     top: 30%;
-    left: 12%;
-}
-.categoria {
-  font-size: 80%;
-    color: white;
-    position: absolute;
-    top: 40%;
-    left: 10%;  
+    left: 2%;
 }
 .contenedor-img:hover .contenedor-texto {
     opacity: 1;
 }
+
+.contenedor-imagenes2 {
+    display: flex; 
+    width: 86%;
+    height: 100%;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 2%;
+    justify-content: space-between;
+    display: none;
+    
+}
+@media(max-width:1024px) {
+    .contenedor-imagenes2 {
+        display: block; 
+        display: flex;
+        width: 86%;
+        justify-content: space-between;
+    }
+}
+@media(max-width:1025px) {
+    .contenedor-imagenes {
+        display: none;
+        width: 42%;
+    }
+} 
+.contenedor-img2 {
+    position: relative;
+    width: 40%;
+}
+
+.imagen-fondo2 {
+    display: block;
+    width: 100%;
+}
+.contenedor-texto2 {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%; 
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(0,0,0,.5);
+}
+.contenedor-texto2 i {
+    color: white;
+    font-size: 250%;
+    position: absolute;
+    top: 20%;
+    right: 45%;
+}
+.contenedor-texto2 h2 {
+    left: 15%;
+}
+.contenedor-texto2 h3 {
+    color: white;
+    font-size: 150%;
+    position: absolute;
+    top: 55%;
+    right: 35%;  
+}
+.texto2 {
+    font-size: 150%;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 2%;
+}
+
+.contenedor-img2:hover .contenedor-texto2 {
+    opacity: 1;
+}
+
 .septima {
     display: flex;
     justify-content: center;
@@ -938,7 +978,7 @@ font-size: 150%;
   }
   @nedia(max-width:1024px) {
     .septima {
-        padding-top: 200px;
+        padding-top: 100px;
     }
 } 
 
@@ -951,9 +991,7 @@ font-size: 150%;
   .septima h1 {
     margin: 0 auto;
     width: 50%;
-    /* padding-left: 15%; */
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-bottom: 145px;
     color: white;
     font-size: 250%;
     
