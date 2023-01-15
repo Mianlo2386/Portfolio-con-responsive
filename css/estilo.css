@@ -583,8 +583,16 @@ main {
                 margin-left: 260px;
                 
             }
-        }
-        @media(max-width:412px) {
+    }
+    @media(max-width:440px) {
+            .tabladatos1 {
+                margin-top: 1300px;
+            }
+            .tabladatos2 {
+                margin-right: 150px;
+            }
+    }
+    @media(max-width:412px) {
             .tabladatos1 {
                 margin-top: 1500px;
             }
@@ -753,13 +761,17 @@ main {
         margin-top: 720px;
     }
 }
+@media(max-width:440px) {
+    .tercera {
+        margin-top: 820px;
+    }
+}
 @media(max-width:412px) {
     .tercera {
         margin-top: 920px;
     }
 }
 /*aca empieza cuarta seccion resumen de cv*/
-
 
 .cuarta {
     margin: 46px auto;
@@ -830,7 +842,6 @@ main {
         margin-right: 40px;
     }
 }
-
 @media(max-width:412px) {
     .experiencia {
         margin-right: 30px;
@@ -903,28 +914,24 @@ main {
     padding-left: 3%;
 }
 
-
 /*aca empieza quinta seccion con mis habilidades*/
 
 .quinta {
-    display: flex;
-    padding-top: 50px;
-    margin-top: 5%;
-    padding-left: 8.5%;
-    width: 1070px;
-    height: 60px;
+    /* border: var(--paraBordes); */
+    width: 100%;
+    margin-top: 100px;
 }
 .quinta h2 {
-    margin-left: 0%;
-    height: 30px;
-    width: 240px;
+    margin-left: 7%;
 }
+
 .quintaBis {
+    /* border: 1px solid red; */
     display: flex; 
     justify-content: space-between;
-    margin-left: 8.5%;
+    padding: 0 6% 0 7%;
     margin-top: 3%;
-    width: 550px;
+    width: 100%;
     height: 250px;
 }
 .quintaBis h3 {
@@ -935,16 +942,19 @@ main {
     display: flex;
     justify-content:space-between;
     font-size: 100%;
+    border: 1px solid black;
 }
 .quintaBis span {
-    width: 70px;
+    border: 1px solid red;
+    width: 40px;
     height: 35px;
-    margin-left: 69%;
+    margin-right: 1%;
+    /* margin-left: 69%; */
     text-align: left;
 }
 .barraDeProgreso {
     margin-top: 10px;
-    width: 480px;
+    width: 550px;
     height: 10px;
     /*para controlar barra de progreso*/
     padding-right: 5%;
@@ -1013,25 +1023,156 @@ main {
     color: white;
     text-decoration-line: underline;
   }
-  @media(max-width: 1170px) {
+  @media(max-width: 1200px) {
     .quinta { 
-        margin-top: 650px;
-        padding-left: 37%;
-
+        padding: 2% 0 2% 0%;
+    }
+    .quinta h2 {
+        /* border: 1px solid blue; */
+        margin-left: 6%;
     }
   }
   @media(max-width:1200px) {
     .quintaBis {
         display: flex;
+        padding: 0 5% 0 6%;
+        /* background-color: aqua; */
+     } 
+     .quintaBis h3 {
+        width: 520px;
+     }
+     .barraDeProgreso {
+        width: 520px;
+     }
+    .porcentajesA {
+        /* border: 1px solid green; */  
+    } 
+    .porcentajesB {
+        /* border: 1px solid violet; */  
+    }
+    }
+    @media(max-width: 992px) {
+      .quinta { 
+          margin-top: 200px;
+      }
+      .quintaBis {
+        display: flex;
+        padding: 0 5% 0 4%;
+        /* background-color: aqua; */
+     }
+      .quinta h2 {
+          /* border: 1px solid blue; */
+          margin-left: 4%;
+      } 
+      .quintaBis h3 {
+         width: 430px;
+      }
+      .barraDeProgreso {
+         width: 430px;
+      }
+    }
+    @media(max-width: 768px) {
+      .quinta { 
+          margin-top: 350px;
+      }
+      .quintaBis {
+        display: flex;
+        padding: 0 5% 0 4%;
+        /* background-color: aqua; */
+     }
+      .quinta h2 {
+          /* border: 1px solid blue; */
+          margin-left: 4%;
+      } 
+      .quintaBis h3 {
+         width: 340px;
+      }
+      .barraDeProgreso {
+         width: 340px;
+      }
+      .botonCV {
+        margin: 60px 300px;
+      }
+    }
+    @media(max-width: 576px) {
+      .quinta { 
+          margin-top: 650px;
+      }
+      .quintaBis {
+        display: flex;
+        padding: 0 5% 0 6%;
+        /* background-color: aqua; */
         flex-direction: column;
-        margin: 0 auto;
+     }
+      .quinta h2 {
+          /* border: 1px solid blue; */
+          margin-left: 6%;
+      } 
+      .quintaBis h3 {
+         width: 530px;
+      }
+      .barraDeProgreso {
+         width: 530px;
+      }
+      .botonCV {
+        margin: 300px 200px;
+      }
     }
-  }
-  @media(max-width:1200px) {
-    .botonCV {
-        margin-top: 300px;
+    @media(max-width: 440px) {
+      .quinta { 
+          margin-top: 850px;
+      }
+      .quintaBis {
+        display: flex;
+        padding: 0 5% 0 6%;
+        /* background-color: aqua; */
+        flex-direction: column;
+     }
+      .quinta h2 {
+          /* border: 1px solid blue; */
+          margin-left: 6%;
+      } 
+      .quintaBis h3 {
+         width: 400px;
+      }
+      .barraDeProgreso {
+         width: 400px;
+      }
+      .botonCV {
+        /* background-color: lightblue; */
+        margin: 300px 125px;
+      }
     }
-  }
+    @media(max-width: 412px) {
+      .quinta { 
+          margin-top: 860px;
+      }
+      .quintaBis {
+        display: flex;
+        padding: 0 5% 0 6%;
+        /* background-color: aqua; */
+        flex-direction: column;
+     }
+      .quinta h2 {
+          /* border: 1px solid blue; */
+          margin-left: 6%;
+      } 
+      .quintaBis h3 {
+         width: 350px;
+      }
+      .barraDeProgreso {
+         width: 350px;
+      }
+      .botonCV {
+        /* background-color: lightblue; */
+        margin: 300px 109px;
+      }
+    }
+    
+
+
+
+
   
   /*aca empieza sexta seccion sobre porfolio*/
 
