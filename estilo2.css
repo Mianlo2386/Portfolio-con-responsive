@@ -60,130 +60,96 @@ header div a:hover {
 main {
     font-family: Solway, cursive;
 }
-.segunda {
+.tabla {
     width: 100%;
-    height: 560px;
-    /* background-color: aqua; */
-    
-}
-.encabezado {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 260px;
-    background-color: white;
-}
-.encabezado p {
-    width: 113px;
-    min-width: 113px;
-    background-color: var(--colorElegido);
-    text-align: center;
-    margin-bottom: 40px;
-}
-.encabezado h2 strong {
-    width: 24%;
-    height: 50px;
-    /* border: var(--paraBordes); */
-    font-size: 150%;
-}
-.segundabis {
-    /* border: var(--paraBordes); */
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    /* align-items: center; */
-    
-}
-.textos {
-    margin-left: 7%;
-    width:70% ;
-    /* background-color: bisque; */
-    height: 300px;
-    display: flex;
-    align-items: left;
-    flex-direction: column;
-}
-.textos h2 {
-    width: 100%;
-    height: 50px;
-    font-size: 230%;
-}
-.textos h2 span {
-    text-decoration: underline var(--colorElegido);
-}
-.textos p {
-    width: 100%;
-    height: 380px;
-    font-size: 150%;
-}
-.experiencia1 {
-    width:50% ;
-    height: 300px;
-    /* background-color: brown; */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.experiencia1 h1 {
-    background-color: var(--colorElegido);
-    width: 150px;
     height: 150px;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1300%;
-    animation-name: escala;
-    animation-duration: 6s;
-    animation-iteration-count: 2;
-}
-@keyframes escala {
-    0%{
-        transform: scale(1.0)
-    }
-    50%{
-        transform: scale(1.5)
-    } 
-100% {
-    transform: scale 1.2;
-}
-}
-.experiencia1 h4 {
     /* border: var(--paraBordes); */
-    font-size: 200%;
-    align-items: center;
 }
-@media(max-width:992px){
-    .textos {
-        margin-left: 3%;
-    }    
+.tabladatos {
+    /* border: var(--paraBordes); */
+    width: 86%;
+    height: 150px;
+    margin-left: 7%;
+    display: flex;
+    justify-content: space-between;
 }
-@media(max-width:768px){
-    .segundabis {
+
+.tabladatos1 {
+    /* border: var(--paraBordes); */
+    padding: 15px 0;
+    width: 43%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.tabladatos2 {
+    padding: 15px 0;
+    /* border: var(--paraBordes); */
+    width: 43%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.titulos {
+    padding: 15px 0;
+    color: grey;
+}
+.tabladatos1 h3 span {
+    text-decoration: underline;
+}
+h3 {
+    width: 270px;
+    min-width: 270px;
+    height: 60px;
+    /* border: var(--paraBordes);  */
+}
+@media(max-width:1094px) {
+    .tabladatos {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    .experiencia1 {
         margin-top: 50px;
+        margin-left: 0%;
     }
 }
-@media(max-width:576px){
-    .textos h2 {
-        margin-bottom: 50px;
+@media(max-width:768px) {
+        h3 {
+            /* border: var(--paraBordes); */
+            margin-left: -50px;
+        }
     }
-    .experiencia1 {
-        margin-top: 200px;
-    }
-}
-@media(max-width:412px){
-    .experiencia1 {
-        margin-top: 370px;
-    }
-}
+    @media(max-width:576px) {
+            .tabladatos1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 230px;
+            }
+            .tabladatos2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 100px;
+                
+            }
+        }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
