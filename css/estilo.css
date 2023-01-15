@@ -267,6 +267,23 @@ main {
 
     }
 }
+
+@media(max-width:440px) {
+    .izquierda h2 {
+        /* border: var(--paraBordes); */
+      font-size: 170%;  
+      text-align: center;
+      width: 100%;
+    }
+    .izquierda h1 {
+        font-size: 230%;
+        margin-left: 210px;
+    }
+    .botones {/* 
+        border: var(--paraBordes); */
+        width: 400px;
+    }
+}
 @media(max-width:412px) {
       .izquierda h2 {/* 
           border: var(--paraBordes); */
@@ -453,6 +470,14 @@ main {
     }
     .experiencia1 {
         margin-top: 200px;
+    }
+}
+@media(max-width:440px){
+    .textos h2 {
+        margin-bottom: 50px;
+    }
+    .experiencia1 {
+        margin-top: 280px;
     }
 }
 @media(max-width:412px){
@@ -756,20 +781,64 @@ main {
     text-align: center;
     
 }
-@media(max-width:1160px) {
+@media(max-width:1200px) {
     .cuarta {
-        margin-top: 1060px;
-    }     
+        margin-left: -1%;
+    }
 }
 @media(max-width:1160px) {
+    .cuarta {
+        margin-top: 960px; 
+        /* background-color: var(--colorElegido); */
+    } 
+    
+@media(max-width:992px) {
+    .cuarta {
+        margin-left: -3%;
+    }
+} 
+@media(max-width:576px) {
     .resumen {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+        margin-top: 240px;
+        text-align: center;
+        /* border: var(--paraBordes); */
+    }
+    .educacion {
+        /* border: var(--paraBordes); */
+        min-width: 100%;
+
     }
     .experiencia {
-        padding-top: 30px;
-        padding-right:4% ;
+        
+        /* border: var(--paraBordes); */
+        min-width: 100%;
+        margin-right: 50px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+}
+}
+@media(max-width:440px) {
+    .resumen {
+        margin-top: 300px;
+    }
+    .experiencia {
+        margin-right: 40px;
+    }
+}
+
+@media(max-width:412px) {
+    .experiencia {
+        margin-right: 30px;
+    }
+}
+@media(max-width:360px) {
+    .resumen {
+        margin-top: 350px;
     }
 }
 .resumen {
@@ -833,6 +902,7 @@ main {
     margin-left: 6%;
     padding-left: 3%;
 }
+
 
 /*aca empieza quinta seccion con mis habilidades*/
 
