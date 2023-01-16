@@ -57,6 +57,13 @@ header div a:hover {
         font-size: 150%;
     }
 }
+@media(max-width:440px) {
+    
+    .hamburguesa {
+        margin-right: 20px;
+        font-size: 130%;
+    }
+}
 main {
     font-family: Solway, cursive;
 }
@@ -274,10 +281,11 @@ main {
       font-size: 170%;  
       text-align: center;
       width: 100%;
+      margin-top: 60px;
     }
     .izquierda h1 {
         font-size: 230%;
-        margin-left: 210px;
+        margin-left: 220px;
     }
     .botones {/* 
         border: var(--paraBordes); */
@@ -477,7 +485,7 @@ main {
         margin-bottom: 50px;
     }
     .experiencia1 {
-        margin-top: 280px;
+        margin-top: 350px;
     }
 }
 @media(max-width:412px){
@@ -586,7 +594,7 @@ main {
     }
     @media(max-width:440px) {
             .tabladatos1 {
-                margin-top: 1300px;
+                margin-top: 1400px;
             }
             .tabladatos2 {
                 margin-right: 150px;
@@ -594,7 +602,7 @@ main {
     }
     @media(max-width:412px) {
             .tabladatos1 {
-                margin-top: 1500px;
+                margin-top: 1600px;
             }
             .tabladatos2 {
                 margin-right: 150px;
@@ -763,7 +771,7 @@ main {
 }
 @media(max-width:440px) {
     .tercera {
-        margin-top: 820px;
+        margin-top: 920px;
     }
 }
 @media(max-width:412px) {
@@ -942,10 +950,10 @@ main {
     display: flex;
     justify-content:space-between;
     font-size: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .quintaBis span {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 40px;
     height: 35px;
     margin-right: 1%;
@@ -1133,10 +1141,10 @@ main {
           margin-left: 6%;
       } 
       .quintaBis h3 {
-         width: 400px;
+         width: 390px;
       }
       .barraDeProgreso {
-         width: 400px;
+         width: 390px;
       }
       .botonCV {
         /* background-color: lightblue; */
@@ -1165,7 +1173,7 @@ main {
       }
       .botonCV {
         /* background-color: lightblue; */
-        margin: 300px 109px;
+        margin: 300px 109 px;
       }
     }
     
