@@ -1462,6 +1462,189 @@ main {
             padding: 15px;
         }
 }
+ /*aca empieza footer*/
+
+ .octava {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: var(--colorElegido);
+    }
+.octava2 {
+    margin-left: 7%;
+    width: 50%;
+    height: 900px;  
+    /* border: var(--paraBordes);  */        
+}
+.octava2 h1 {
+    /* border: var(--paraBordes); */
+    margin: 100px 0;
+    font-size: 220%;
+    }
+.octava2 h3 {
+    margin: 50px auto;
+    color: black;
+    padding-right: 15%;
+}
+
+.octava2 p {
+    width: 250px;
+    height: 30px;
+    /* margin-top: 10px; */
+    /* margin-left: 0; */
+    color: black;
+    font-size: 110%;
+    text-align: justify;
+}
+.octava3 {
+    margin-right: 7%;
+}
+.redes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 112px;
+    /* border: 1px solid black; */
+    /* position: relative; */
+    width: 120px;
+}
+.redes i {
+    /* margin-left: 0px; */
+    width: 40px;
+    height: 40px;
+    color: black;
+    font-size: 200%;
+    justify-content: left;
+}
+.redes i:hover {
+    color: var(--colorParaFondo);
+}
+.iconos {
+    color: var(--colorElegido);
+}
+.octava3 {
+    /* border: var(--paraBordes); */
+    width: 50%;
+}
+.octava3 h1 {
+    /* border: var(--paraBordes); */
+    margin: 100px 0;
+    font-size: 220%;
+}
+form {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+label {
+    font-size: 120%;
+    margin: 0px 0 30px 0;
+}
+input[type=text] {
+    padding: 30px;
+    border: 0;
+    border-bottom: 1px solid black;
+    background-color: var(--colorElegido);
+    margin-bottom: 10px;
+}
+input[type=text]:focus {
+    background: white;
+    outline: none;
+
+}
+textarea {
+    /* margin-bottom: 70px; */
+    min-height: 80px;
+    background-color: var(--colorElegido);
+    border: 0;
+    border-bottom: 1px solid black;
+    resize: vertical;
+}
+textarea:focus {
+    background: white;
+    outline: none;
+}
+.botonEnviar {
+    background-color: black;
+    width: 200px;
+    font-size: 120%;
+    padding: 15px 0;
+    color: white;
+    border-radius: 5px;
+    }
+.botonEnviar:hover {
+    background-color:  rgba(0,0,0,.5);
+    border: 2px solid black;
+}
+.botonEnviar a {
+    font-size: 100%;
+    color: white;
+    
+}
+@media(max-width:1200px) {
+    .octava2 {
+        margin-left: 6%;
+    }
+    .octava3 {
+        margin-right: 6%;
+    }
+}
+@media(max-width:992px) {
+    .octava2 {
+        margin-left: 3%;
+    }
+    .octava3 {
+        margin-right: 3%;
+    }
+}
+@media(max-width:768px) {
+    .octava2 {
+       width: 45%; 
+    }
+    .redes {
+        margin-top: 50px;
+    }
+}
+@media(max-width:576px) {
+    .octava2 {
+        width: 50%;
+        margin-right: 10px;
+    }
+    .octava2 h1 {
+        font-size: 150% ;
+    }
+    .octava3 h1 {
+        font-size: 150% ;
+    }
+    .redes {
+        margin-top: 20px;
+    } 
+    .botonEnviar {
+        margin-top: 40px;
+    }
+}
+@media(max-width:440px) {
+    .octava {
+        flex-direction: column;
+        padding-bottom: 50px;
+        margin-top: 0%;
+    }
+    .octava2 {
+        width: 90%;
+        height: 90%;
+        margin-top: 0%;
+        padding-bottom: 0%;
+        /* border: var(--paraBordes); */
+    }
+    .octava3 { 
+        /* border: var(--paraBordes); */
+        width: 90%;
+        margin-left: 3%;
+        /* margin-top: -30%; */
+    }
+}
+
 
 
 
