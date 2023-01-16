@@ -58,7 +58,9 @@ header div a:hover {
     }
 }
 @media(max-width:440px) {
-    
+    header {
+        width: 100%;
+    }
     .hamburguesa {
         margin-right: 20px;
         font-size: 130%;
@@ -594,7 +596,7 @@ main {
     }
     @media(max-width:440px) {
             .tabladatos1 {
-                margin-top: 1400px;
+                margin-top: 1500px;
             }
             .tabladatos2 {
                 margin-right: 150px;
@@ -931,6 +933,7 @@ main {
 }
 .quinta h2 {
     margin-left: 7%;
+    padding: 30px 0;
 }
 
 .quintaBis {
@@ -1059,7 +1062,7 @@ main {
         /* border: 1px solid violet; */  
     }
     }
-    @media(max-width: 992px) {
+ @media(max-width: 992px) {
       .quinta { 
           margin-top: 200px;
       }
@@ -1079,7 +1082,7 @@ main {
          width: 430px;
       }
     }
-    @media(max-width: 768px) {
+@media(max-width: 768px) {
       .quinta { 
           margin-top: 350px;
       }
@@ -1102,7 +1105,7 @@ main {
         margin: 60px 300px;
       }
     }
-    @media(max-width: 576px) {
+@media(max-width: 576px) {
       .quinta { 
           margin-top: 650px;
       }
@@ -1126,7 +1129,7 @@ main {
         margin: 300px 200px;
       }
     }
-    @media(max-width: 440px) {
+@media(max-width: 440px) {
       .quinta { 
           margin-top: 850px;
       }
@@ -1141,17 +1144,17 @@ main {
           margin-left: 6%;
       } 
       .quintaBis h3 {
-         width: 390px;
+         width: 380px;
       }
       .barraDeProgreso {
-         width: 390px;
+         width: 380px;
       }
       .botonCV {
         /* background-color: lightblue; */
         margin: 300px 125px;
       }
     }
-    @media(max-width: 412px) {
+ @media(max-width: 412px) {
       .quinta { 
           margin-top: 860px;
       }
@@ -1176,15 +1179,8 @@ main {
         margin: 300px 109 px;
       }
     }
-    
-
-
-
-
-  
-  /*aca empieza sexta seccion sobre porfolio*/
-
-
+      
+  /*aca empieza sexta sección sobre porfolio*/
 
  .sexta {
     background-color: var(--colorParaFondo);
@@ -1194,28 +1190,34 @@ main {
     margin-top: 50px;
     padding-bottom: 3%;
   }
+  .sexta h2 {
+    width: 100% ;
+    /* border: var(--paraBordes); */
+    text-align: center;
+  }
+
   .sexta h2 strong {
-    margin-left: 380px;
-    /*border: 1px solid black;*/
+    width: 100%;
+    /* border: 1px solid black; */
+    margin: 0 auto;
     font-size: 120%;
   }
   .sexta p {                    
-    margin: 50px 46.5%;
     width: 80px;
     height: 23px;
     background-color: var(--colorElegido);
     font-size: 115%;
+    margin: 50px auto;
   }
   .navbar2  {
-    
-    width: 580px;
-    height: 35px;
-    padding: 40 px auto;
-    justify-content: space-around;
-    font-size: 110%;
-    margin: 30px auto;
-    text-align: center;
-    word-spacing: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 120%;
+    margin: 50px auto;
+    gap: 17px;
+    /* border: var(--paraBordes); */
+
   }
   .navbar2 a {
     text-decoration: none;
