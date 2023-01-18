@@ -94,14 +94,31 @@ main {
 .izquierda h2 {
     margin-top: 100px;
     font-size: 200%;
-} 
+}/* 
+NO FUNCIONA EN RESPONSIVE*/
+/* 
+@keyframes maqEscribir {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    } 
+} */
 .izquierda h1 {
-    width: 650px;
-    height: 100px;
-    /* border: var(--paraBordes); */
+    width: 100%;
     height: 70px;
-    font-size: 350%; 
-}
+    font-size: 350%;
+    /* 
+
+    NO FUNCIONA EFECTO EN RESPONSIVE
+    *//* 
+    display: block;
+    border-right: 4px solid;
+    white-space: nowrap;
+    animation: maqEscribir 3s steps(16) 3;
+    overflow: hidden;   */ 
+} 
 .izquierda h3 {
     padding: 20px 0;
     margin-bottom: 30px;
@@ -130,6 +147,7 @@ main {
 }
 .boton1:hover {
     color: var(--colorElegido);
+    background-color:  rgba(0,0,0,.5);
 }
 .boton2 {
     width: 160px;
@@ -146,6 +164,18 @@ main {
     width: 50%;
     height: 600px;  
 }
+
+@keyframes escala1 {
+    0%{
+        transform: scale(0.5)
+    }
+    50%{
+        transform: scale(1.2)
+    } 
+100% {
+    transform: scale 1.0;
+}
+}
 .imagenPerfil {
     margin-top: 150px;
     margin-left: 100px;
@@ -153,6 +183,10 @@ main {
     height: 400px;
     border-radius: 200px;
     border: 10px solid white;
+    
+    animation-name: escala1;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
 }
 @media(max-width:1266px) {
     .primera {
@@ -1027,7 +1061,7 @@ main {
   }
   .botonCV:hover {
     cursor: pointer;
-    background-color: black;
+    background-color:  rgba(0,0,0,.5);;
   }
   .botonCV a {
     text-decoration: none;
@@ -1301,14 +1335,16 @@ main {
     justify-content: space-between;
     display: none;
     
-}
+} 
 @media(max-width:1024px) {
     .contenedor-imagenes2 {
         display: block; 
-        display: flex;
+        display: flex; 
         width: 90%;
         justify-content: space-between;
         margin-left: 5%;
+
+
     }
 }
 @media(max-width:1025px) {
@@ -1339,7 +1375,7 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 440px;
+        width: 100%;
         margin-left: 0%;
         /* border: var(--paraBordes); */
         gap: 0px;
@@ -1347,16 +1383,11 @@ main {
     .contenedor-img2 {
         /* border: 1px solid red; */
         width: 100%;
-    }  
-    .contenedor-img2 img {
-        /* border: var(--paraBordes); */
-        width: 100%;
-        flex-grow: 1;
     }
 } 
 .contenedor-img2 {
     position: relative;
-    width: 40%;
+    width: 96%;
 }
 .imagen-fondo2 {
     display: block;
@@ -1414,9 +1445,10 @@ main {
     background-size: cover;    
   }
   .septima h1 {
-    margin: 10px auto 100px auto;
+    margin: 10px 20px 100px auto;
     color: white;
     font-size: 250%;
+    
     /* border: 1px solid white; */
   }
   .septima button {
@@ -1431,7 +1463,7 @@ main {
     padding: 25px 25px;
   }
   .septima button:hover {
-    background-color: green;
+    background-color:  rgba(66, 224, 66, 0.5);
   }
   .septima a {
     /* padding-top: 50px; */
