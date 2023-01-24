@@ -300,7 +300,16 @@ NO FUNCIONA EN RESPONSIVE*/
 }
 @media(max-width:440px) {
     .izquierda {
-        padding: 2px 0;
+        padding: 0px 0;
+    }
+    .izquierda h1  {
+        margin: 15px auto;
+      } 
+    .izquierda h2 {
+        margin: 8px auto;
+    }
+    .izquierda h3 {
+        margin: 8px auto;
     }
 }
 @media(max-width:392px) {
