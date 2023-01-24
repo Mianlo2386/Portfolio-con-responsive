@@ -306,10 +306,10 @@ NO FUNCIONA EN RESPONSIVE*/
         margin: 15px auto;
       } 
     .izquierda h2 {
-        margin: 8px auto;
+        margin: 9px auto;
     }
     .izquierda h3 {
-        margin: 8px auto;
+        margin: 9px auto;
     }
 }
 @media(max-width:392px) {
