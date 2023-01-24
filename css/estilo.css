@@ -1134,7 +1134,7 @@ NO FUNCIONA EN RESPONSIVE*/
     }
     @media(max-width:440px){
         .quinta {
-            margin-top: 165%;
+            margin-top: 185%;
         }
         .quinta h2 {
             margin-left: 6%;
@@ -1146,6 +1146,11 @@ NO FUNCIONA EN RESPONSIVE*/
     
     }
     
+    @media(max-width:360px){
+        .quinta {
+            margin-top: 255%;
+        }
+    }
     
       
   /*aca empieza sexta sección sobre porfolio*/
