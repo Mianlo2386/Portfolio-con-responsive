@@ -450,11 +450,14 @@ NO FUNCIONA EN RESPONSIVE*/
     }
 }
 @media(max-width:440px){
+    .textos {
+        width: 90%;
+    }
     .textos h2 {
         margin-bottom: 50px;
     }
     .experiencia1 {
-        margin-top: 350px;
+        margin-top: 300px;
     }
 }
 @media(max-width:412px){
