@@ -462,7 +462,7 @@ NO FUNCIONA EN RESPONSIVE*/
 }
 @media(max-width:412px){
     .experiencia1 {
-        margin-top: 320px;
+        margin-top: 300px;
     }
     
 }
@@ -1137,7 +1137,7 @@ NO FUNCIONA EN RESPONSIVE*/
     }
     @media(max-width:440px){
         .quinta {
-            margin-top: 185%;
+            margin-top: 195%;
         }
         .quinta h2 {
             margin-left: 6%;
@@ -1150,7 +1150,7 @@ NO FUNCIONA EN RESPONSIVE*/
     }
     @media(max-width:412px){
         .quinta {
-            margin-top: 205%;
+            margin-top: 215%;
         }
     }
     
