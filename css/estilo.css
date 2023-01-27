@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid blue;   */
+     /* border: 1px solid blue;  */  
     box-sizing: border-box;
 }
 :root {
@@ -53,7 +53,51 @@ header div a:hover {
     color: var(--colorElegido);
 }
 .hamburguesa {
-     display: none;    
+    border: transparent;
+    background-color: white;
+    display: none; 
+    color: black; 
+    font-weight: 2000;   
+}
+.btnCerrar:hover {
+    color: var(--colorElegido);
+    text-decoration: underline;
+}
+.botonesHamburguesa {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: end;
+    cursor: pointer;
+    color: black;
+}
+.botonesHamburguesa li {
+    padding: 8px 0;
+}
+.botonesHamburguesa li a {
+    color: black;
+    
+}
+.menuHamburguesa {
+     display: none; 
+     position: absolute;  
+     top: 0;
+     right: 0;
+     height: 100vh; 
+     padding: 2rem;
+     background-color: white;
+     
+      box-shadow: 0px 10px 5px gray; 
+}
+.btnCerrar {
+    position: absolute;
+    right: 12px;
+    color: black;
+    border: transparent;
+    background-color: white;
+    cursor: pointer;
+    font-size: 100%;
+    margin: 40px 17px 0 0;
 }
 @media(max-width:840px) {
     /* .header {
@@ -63,9 +107,22 @@ header div a:hover {
     nav, header div {
         display: none;
     }
+    .menuHamburguesa {
+        display: block; 
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menuVisible {
+        opacity: 1;
+        visibility: visible;
+    }
     .hamburguesa {
         display: block;
         font-size: 150%;
+    }
+    .abrirMenu, .cerrarMenu {
+        display: block;
+
     }
 }
 main {
