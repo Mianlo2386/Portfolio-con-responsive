@@ -70,6 +70,7 @@ header div a:hover {
     align-items: end;
     cursor: pointer;
     color: black;
+    transition: 0.3s;
 }
 .botonesHamburguesa li {
     padding: 8px 0;
@@ -87,7 +88,7 @@ header div a:hover {
      padding: 2rem;
      background-color: white;
      
-      box-shadow: 0px 10px 5px gray; 
+    box-shadow: 0px 10px 5px gray; 
 }
 .btnCerrar {
     position: absolute;
@@ -111,10 +112,21 @@ header div a:hover {
         display: block; 
         opacity: 0;
         visibility: hidden;
+        animation: escondeMenu 450ms ease-out both;
+    }
+    
+    @keyframes escondeMenu {
+        from{opacity: 1;}
+        to{opacity: 0;}
     }
     .menuVisible {
+        animation: muestraMenu 350ms ease-in-out both;
         opacity: 1;
         visibility: visible;
+    }
+    @keyframes muestraMenu {
+        from{opacity: 0;}
+        to{opacity: 1;}
     }
     .hamburguesa {
         display: block;
@@ -248,7 +260,7 @@ NO FUNCIONA EN RESPONSIVE*/
     border: 10px solid white;
     
     animation-name: escala1;
-    animation-duration: 6s;
+    animation-duration: 4s;
     animation-iteration-count: 1;
 }
 @media(max-width:1266px) {
@@ -514,7 +526,7 @@ NO FUNCIONA EN RESPONSIVE*/
         margin-bottom: 50px;
     }
     .experiencia1 {
-        margin-top: 300px;
+        margin-top: 260px;
     }
 }
 @media(max-width:412px){
@@ -1617,10 +1629,10 @@ NO FUNCIONA EN RESPONSIVE*/
 }
 form {
     width: 100%;
-    height: 500px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid red; */
+    /* border: 1px solid red; */ 
 }
 label {
     font-size: 120%;
@@ -1661,11 +1673,12 @@ textarea:focus {
 .botonEnviar:hover {
     background-color:  rgba(0,0,0,.5);
     border: 2px solid black;
+    cursor: pointer;
 }
 .botonEnviar a {
     font-size: 100%;
     color: white;
-    
+    cursor: pointer;
 }
 @media(max-width:1200px) {
     .octava2 {
@@ -1707,6 +1720,7 @@ textarea:focus {
     } 
     .botonEnviar {
         margin-top: 40px;
+        
     }
 }
 @media(max-width:440px) {
@@ -1730,9 +1744,30 @@ textarea:focus {
     }
 }
 
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+footer h3 { 
+    margin: auto 7% auto 6%;
+    color: white;
+}
+footer h3 a {
+    color: var(--colorElegido);
+    text-decoration: underline;
+}
 
-
-
-
+footer h3 a:hover {
+    text-decoration: none;
+}
+@media(max-width:440px){
+    footer h3 {
+        font-size: 90%;
+    }
+}
 
 
