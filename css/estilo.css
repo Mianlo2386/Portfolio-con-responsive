@@ -263,6 +263,15 @@ NO FUNCIONA EN RESPONSIVE*/
     animation-duration: 4s;
     animation-iteration-count: 1;
 }
+@media(max-width:1329px){
+    .izquierda h1 {
+        font-size: 330%;
+        width: 100%;
+        margin: 20px auto;
+        /* text-align: center; */
+    }
+}
+
 @media(max-width:1266px) {
     .primera {
         /* background-color: blueviolet; */
