@@ -25,9 +25,7 @@ header {
     font-family: Solway, cursive;
     box-shadow: 0px 5px 3px gray;
 }
-header h3 {
-    /* width: 10.5%; */
-}
+
 header nav {
     /* width: 43%; */
     word-spacing: 10px;
@@ -1323,17 +1321,17 @@ NO FUNCIONA EN RESPONSIVE*/
     font-size: 250%;
     position: absolute;
     top: 20%;
-    right: 45%;
+    right: 50%;
 }
 .contenedor-texto h2 {
-    left: 15%;
+    left: 10%;
 }
 .contenedor-texto h3 {
     color: white;
     font-size: 150%;
     position: absolute;
     top: 55%;
-    right: 35%;  
+    right: 27%;  
 }
 
 @media(max-width:1200px) {
