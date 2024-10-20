@@ -1053,7 +1053,7 @@ NO FUNCIONA EN RESPONSIVE*/
     background-color: gainsboro; 
 }
 .porcentaje1 {
-    width: 60%;
+    width: 80%;
     height: 10px;
     /*border: var(--paraBordes);*/
     background-color: var(--colorElegido);  
