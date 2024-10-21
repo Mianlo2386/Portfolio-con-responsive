@@ -1609,6 +1609,25 @@ NO FUNCIONA EN RESPONSIVE*/
     font-size: 110%;
     text-align: justify;
 }
+
+.whatsapp-link {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem; /* Ajusta el tamaño del icono según tu preferencia */
+}
+
+.whatsapp-link:hover {
+    color: var(--colorParaFondo); /* Puedes cambiarlo a otro color si prefieres */
+}
+
+.bi-arrow-right {
+    margin-left: 10px;
+    color: black;
+    font-size: 2rem; /* Ajusta el tamaño del icono según tu preferencia */
+}
+
+
+
 .octava3 { 
     margin-right: 6%;
 }
