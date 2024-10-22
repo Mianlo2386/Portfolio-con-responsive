@@ -40,6 +40,24 @@ enlace6.addEventListener('click', () => {
     menuHamb.classList.remove('menuVisible');
 });
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    const texto = "SOY PROGRAMADOR!";
+    let i = 0;
+
+    function typeWriter() {
+        if (i < texto.length) {
+            document.getElementById("typewriter").innerHTML = texto.substring(0, i + 1) + '<span class="cursor"></span>';
+            i++;
+            setTimeout(typeWriter, 200); // Ajuste de velocidad a 200ms
+        } else {
+            document.querySelector(".cursor").style.display = "inline-block";
+        }
+    }
+
+    typeWriter();
+});
+
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Evita que el formulario se envíe por defecto
 
